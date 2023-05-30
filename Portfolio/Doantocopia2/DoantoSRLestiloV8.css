@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	background: #000000;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 22em;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+footer {
+	background-color: #616A6B;
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+}
+.container {
+    margin: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Navigation */
+.nav-brand {
+	width: 100%;
+	height: 500px;
+}
+.nav-main{
+	width: 100%;
+	font-size: 16px;
+	background-color: #616A6B;
+	display: inline-block;
+	justify-content: space-between;
+	align-content: center;
+}
+.nav-main ul{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+.nav-main ul li{
+	padding: 17px;
+	display: inline-block;
+	justify-content: space-between;
+	align-content: center;
+}
+.nav-main ul li a{
+	padding: 2px;
+	display: inline-block;
+	justify-content: space-between;
+	align-content: center;
+}
+.nav-main ul li a:hover {
+	border-bottom: 1px solid #ffffff;
+}
+.nav-menu{
+	display: inline-block;
+}
+.nav-main li ul {
+	background-color: #616A6B;
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+.nav-main li:hover > ul {
+	display: block;
+}
+.nav-lugares {
+	flex-direction: column;
+	align-items: column;
+	display: table-column;
+	position: absolute;
+}
+/* SHOWCASE */
+.showcase{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+}
+/* SHOWCASE2 */
+.showcase2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+}
+.nav-information{
+	padding: 5px;
+	padding-right: 27px;
+	align-items: center;
+
+}
+/* QUIENES SOMOS */
+.quienessomos1{
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
+.quienessomos2{
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
+.nav-quienesomos{
+	padding: 5px;
+	text-align: center;
+}
+.misionyvision1{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.misionyvision2{
+	padding: 5px;
+	text-align: center;
+}
+
+/* SERVICIOS */
+
+.servicios{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.servicios2{
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.servicios3{
+	padding-bottom: 50px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.servicios3 h3{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.servicios3 h2{
+	padding-top: 40px;
+	padding-bottom: 15px;
+	padding-right: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+/* DONDE TRABAJAMOS */
+.dondetrabajamos{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
+.dondetrabajamos2{
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
+.nav-dondetrabajamos{
+	padding: 5px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+/* CASAS DE SEPELIO */
+.casasdesepelio{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.casasdesepelio2{
+	padding: 50px;
+	display: inline-block;
+	text-align: center;
+	justify-content: space-between;
+}
+.nav-casasdesepelio{
+	padding: 5px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+/* CONTACTO */
+.contacto1{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.contacto2{
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.contacto3{
+	padding-bottom: 20px;
+}
+.formulario{
+	position:relative;
+	width:500px;
+	padding-left: 16px;
+	padding-top: 15px;
+	background-color:#616A6B;
+	border-radius: 20px;
+	margin:auto;
+}
+
+input[type=text],[type=email]{
+	width:470px;
+	height:35px;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+textarea{
+	width: 470px;
+	max-width: 100%;
+	height: 250px;
+	max-height: 500px;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+input[type=submit]{
+	position:relative;
+	width:150px;
+	height:40px;
+	border-radius:20px;
+	margin-left: 150px;
+	margin-bottom: 5px;
+	border: 0px;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+#enviar{
+	background: #31384A;
+	color: #fff;
+}
+
+#enviar:hover {
+	cursor: pointer;
+}
+
+label{
+	margin:11px 20px 0 0;
+	font-size:16px;
+	color:#ffffff;
+	text-transform: uppercase;
+	text-shadow:0px 1px 0px #fff;
+}
+
+.LaPlata p{
+	padding-bottom: 20px;
+}
+
+.Berisso p{
+	padding-bottom: 20px;
+}
+
+.Ensenada p{
+	padding-bottom: 20px;
+}
+
+.nav-toggle {
+	color: white;
+	background: none;
+	border: none;
+	font-size: 20px;
+	padding: 0 20px;
+	line-height: 40px;
+
+	display: none;
+}

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*
+font-family: 'Permanent Marker', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: linear-gradient(
+        90deg,
+        rgba(39, 1, 32, 1) 33%,
+        rgba(50, 1, 49, 1) 69%,
+        rgba(77, 13, 55, 1) 100%
+    );
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    min-height: 75vh;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    color: #FECE00;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: #FECE00;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 0 0;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1{
+    font-size: 85px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 25px;
+}
+.header-txt span{
+    color: #FECE00;
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.header-img img{
+    width: 650px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #FECE00;
+    border-radius: 25px;
+    color: #400E00;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn-1:hover{
+    background-color: #E7BE07;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.services-1{
+    padding: 25px;
+    text-align: center;
+}
+
+.services-1 img{
+    width: 45px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 25px;
+}
+
+.services-1 p {
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.info {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-1 {
+    width: 50%;
+}
+
+.info-1 img{
+    width: 650px;
+    margin-left: -75px;
+}
+
+.info-2 {
+    width: 50%;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 55px;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-bottom: 45px;
+}
+
+.testi {
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.testi-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.testi-1{
+    margin: 0 10px;
+}
+
+.testi-1 img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.testi-1 h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #FECF0046;
+}
+
+.link h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    display: block;
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #FECE00;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FECE00;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #400E00;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #515151;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 100px 20px 0 20px;
+    }
+
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+    }
+
+    .header-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-img img {
+        width: 200px;
+    }
+
+    .services {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info-1 {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+
+    .info-1 img {
+        width: 250px;
+        margin-left: 0;
+    }
+
+    .info-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .testi {
+        padding: 20px;
+    }
+
+    .testi-content{
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
